@@ -8,16 +8,46 @@
 
 #import "JaDFAppDelegate.h"
 
+#define kCornerRadius 15.f
+
 @implementation JaDFAppDelegate
 
 @synthesize window = _window;
 
++ (void)initialize
+{
+    //configure iRate
+    [iRate sharedInstance].appStoreID = 490258111;
+}
+
+- (void)startupAnimationDone
+{
+    [mainViewController startupAnimationDone];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    mainViewController = [[JaDFMainViewController alloc] initWithNibName:@"JadFMainViewController" bundle:nil];
+    navController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    navController.delegate = mainViewController;
+    navController.navigationBarHidden = YES;
+    [self.window addSubview:navController.view];
+    self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
+    
+    splashView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default"]];
+    [splashView setFrame:CGRectMake(splashView.frame.origin.x, splashView.frame.origin.y+20, splashView.frame.size.width, splashView.frame.size.height)];
+    [self.window addSubview:splashView];
+    [self.window bringSubviewToFront:splashView];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:self.window cache:YES];
+    [UIView setAnimationDelegate:self]; 
+    [UIView setAnimationDidStopSelector:@selector(startupAnimationDone)];
+    splashView.alpha = 0.0;    
+    [UIView commitAnimations];
+    
     return YES;
 }
 

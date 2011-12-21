@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "JaDFMainViewController.h"
+
+#import "iRate.h"
 
 @interface JaDFAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    UINavigationController *navController;
+    UIImageView *splashView;
+    JaDFMainViewController *mainViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
