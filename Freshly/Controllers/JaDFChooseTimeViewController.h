@@ -13,8 +13,6 @@
 #import "JaDFreshlyCore.h"
 #import "KSAdvancedPicker.h"
 
-#import "UIImage-Extensions.h"
-
 @interface JaDFChooseTimeViewController : UIViewController <KSAdvancedPickerDelegate> 
 {
     int AMorPM;

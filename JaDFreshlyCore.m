@@ -16,6 +16,8 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:NSHourCalendarUnit | NSMinuteCalendarUnit fromDate:date];
     NSString *ap;
+
+
     int hours = components.hour;
     int minutes = components.minute + [NSUserDefaults standardUserDefaults].minutesToSleep;
     int dhr = 0;

@@ -14,6 +14,8 @@
 #import "JaDFInfoViewController.h"
 #import "JaDFreshlyCore.h"
 
+#import "UIView+JaDFreshly.h"
+
 @interface JaDFMainViewController : UIViewController <UINavigationControllerDelegate>
 {
     UIButton *sleepNowBtn;

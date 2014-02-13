@@ -30,6 +30,7 @@
 		3B19BD83149BAEF000E84510 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19BD82149BAEF000E84510 /* Icon@2x.png */; };
 		3B339F0B14950B8800404113 /* JaDFreshlyCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B339F0A14950B8800404113 /* JaDFreshlyCore.m */; };
 		3B339F0F1495327B00404113 /* NSUserDefaults+JaDFreshly.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B339F0E1495327B00404113 /* NSUserDefaults+JaDFreshly.m */; };
+		3B37957514A7D8B0007B0BFC /* UIView+JaDFreshly.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B37957414A7D8B0007B0BFC /* UIView+JaDFreshly.m */; };
 		3B3DF7701482BF4E00966CC1 /* JaDFChooseTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DF76E1482BF4E00966CC1 /* JaDFChooseTimeViewController.m */; };
 		3B3DF7711482BF4E00966CC1 /* JaDFChooseTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3DF76F1482BF4E00966CC1 /* JaDFChooseTimeViewController.xib */; };
 		3B8C85D4147D6F0400E04A40 /* TimesTableOrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8C85D3147D6F0400E04A40 /* TimesTableOrange@2x.png */; };
@@ -109,6 +110,7 @@
 		3BDCB229147D402100AF8558 /* JaDFDisplayTimesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCB227147D402100AF8558 /* JaDFDisplayTimesViewController.xib */; };
 		3BDCB22B147D435E00AF8558 /* TimesTableYellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCB22A147D435E00AF8558 /* TimesTableYellow@2x.png */; };
 		3BDCB22F147D437100AF8558 /* SubNavBarOrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCB22E147D437100AF8558 /* SubNavBarOrange@2x.png */; };
+		3BE2F367163AF6BE000251F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE2F366163AF6BE000251F5 /* Default-568h@2x.png */; };
 		3BE447EA14925229000E8468 /* HalfTimesTableOrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE447E914925229000E8468 /* HalfTimesTableOrange@2x.png */; };
 		3BE447ED14925496000E8468 /* HalfTimesTableYellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE447EC14925496000E8468 /* HalfTimesTableYellow@2x.png */; };
 		3BE447EF149259EA000E8468 /* DoneBtnTxt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE447F1149259EA000E8468 /* DoneBtnTxt@2x.png */; };
@@ -126,7 +128,6 @@
 		3BEF818D148E7A7A0077A1FF /* KSAdvancedPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF818C148E7A7A0077A1FF /* KSAdvancedPicker.m */; };
 		3BEF8194148E951B0077A1FF /* ChooseTimeBgSx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BEF8193148E951B0077A1FF /* ChooseTimeBgSx@2x.png */; };
 		3BEF8196148E95260077A1FF /* ChooseTimeOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BEF8195148E95260077A1FF /* ChooseTimeOverlay@2x.png */; };
-		3BEF8199148EA4E00077A1FF /* UIImage-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF8198148EA4E00077A1FF /* UIImage-Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +166,8 @@
 		3B339F0A14950B8800404113 /* JaDFreshlyCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JaDFreshlyCore.m; path = ../JaDFreshlyCore.m; sourceTree = "<group>"; };
 		3B339F0D1495327B00404113 /* NSUserDefaults+JaDFreshly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+JaDFreshly.h"; path = "../NSUserDefaults+JaDFreshly.h"; sourceTree = "<group>"; };
 		3B339F0E1495327B00404113 /* NSUserDefaults+JaDFreshly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+JaDFreshly.m"; path = "../NSUserDefaults+JaDFreshly.m"; sourceTree = "<group>"; };
+		3B37957314A7D8B0007B0BFC /* UIView+JaDFreshly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JaDFreshly.h"; path = "../UIView+JaDFreshly.h"; sourceTree = "<group>"; };
+		3B37957414A7D8B0007B0BFC /* UIView+JaDFreshly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JaDFreshly.m"; path = "../UIView+JaDFreshly.m"; sourceTree = "<group>"; };
 		3B3DF76D1482BF4E00966CC1 /* JaDFChooseTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JaDFChooseTimeViewController.h; path = Controllers/JaDFChooseTimeViewController.h; sourceTree = "<group>"; };
 		3B3DF76E1482BF4E00966CC1 /* JaDFChooseTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JaDFChooseTimeViewController.m; path = Controllers/JaDFChooseTimeViewController.m; sourceTree = "<group>"; };
 		3B3DF76F1482BF4E00966CC1 /* JaDFChooseTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JaDFChooseTimeViewController.xib; path = Controllers/JaDFChooseTimeViewController.xib; sourceTree = "<group>"; };
@@ -266,6 +269,7 @@
 		3BDCB227147D402100AF8558 /* JaDFDisplayTimesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JaDFDisplayTimesViewController.xib; path = Controllers/JaDFDisplayTimesViewController.xib; sourceTree = "<group>"; };
 		3BDCB22A147D435E00AF8558 /* TimesTableYellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimesTableYellow@2x.png"; sourceTree = "<group>"; };
 		3BDCB22E147D437100AF8558 /* SubNavBarOrange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SubNavBarOrange@2x.png"; sourceTree = "<group>"; };
+		3BE2F366163AF6BE000251F5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3BE447E914925229000E8468 /* HalfTimesTableOrange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HalfTimesTableOrange@2x.png"; sourceTree = "<group>"; };
 		3BE447EC14925496000E8468 /* HalfTimesTableYellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HalfTimesTableYellow@2x.png"; sourceTree = "<group>"; };
 		3BE447F0149259EA000E8468 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/DoneBtnTxt@2x.png"; sourceTree = "<group>"; };
@@ -291,8 +295,6 @@
 		3BEF818C148E7A7A0077A1FF /* KSAdvancedPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSAdvancedPicker.m; sourceTree = "<group>"; };
 		3BEF8193148E951B0077A1FF /* ChooseTimeBgSx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChooseTimeBgSx@2x.png"; sourceTree = "<group>"; };
 		3BEF8195148E95260077A1FF /* ChooseTimeOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChooseTimeOverlay@2x.png"; sourceTree = "<group>"; };
-		3BEF8197148EA4E00077A1FF /* UIImage-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage-Extensions.h"; path = "../UIImage-Extensions.h"; sourceTree = "<group>"; };
-		3BEF8198148EA4E00077A1FF /* UIImage-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Extensions.m"; path = "../UIImage-Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,10 +487,10 @@
 		3B03A10814A2686E00CC1E0A /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				3B37957314A7D8B0007B0BFC /* UIView+JaDFreshly.h */,
+				3B37957414A7D8B0007B0BFC /* UIView+JaDFreshly.m */,
 				3B339F0D1495327B00404113 /* NSUserDefaults+JaDFreshly.h */,
 				3B339F0E1495327B00404113 /* NSUserDefaults+JaDFreshly.m */,
-				3BEF8197148EA4E00077A1FF /* UIImage-Extensions.h */,
-				3BEF8198148EA4E00077A1FF /* UIImage-Extensions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -525,6 +527,7 @@
 		3B9F9EC4147CF79E00BBF9FA = {
 			isa = PBXGroup;
 			children = (
+				3BE2F366163AF6BE000251F5 /* Default-568h@2x.png */,
 				3B9F9ED9147CF79E00BBF9FA /* Freshly */,
 				3B9F9ED2147CF79E00BBF9FA /* Frameworks */,
 				3B9F9ED0147CF79E00BBF9FA /* Products */,
@@ -735,6 +738,7 @@
 				3BB63CF7149C196C001CCF18 /* TimesTableOrange.png in Resources */,
 				3BB63CF8149C196C001CCF18 /* TimesTableYellow.png in Resources */,
 				3BB63CF9149C196C001CCF18 /* txtBG.png in Resources */,
+				3BE2F367163AF6BE000251F5 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,11 +755,11 @@
 				3BDCB228147D402100AF8558 /* JaDFDisplayTimesViewController.m in Sources */,
 				3B3DF7701482BF4E00966CC1 /* JaDFChooseTimeViewController.m in Sources */,
 				3BEF818D148E7A7A0077A1FF /* KSAdvancedPicker.m in Sources */,
-				3BEF8199148EA4E00077A1FF /* UIImage-Extensions.m in Sources */,
 				3B339F0B14950B8800404113 /* JaDFreshlyCore.m in Sources */,
 				3B339F0F1495327B00404113 /* NSUserDefaults+JaDFreshly.m in Sources */,
 				3B19BD4B149B7F7D00E84510 /* JaDFInfoViewController.m in Sources */,
 				3BE83F56149C10E500C769B0 /* iRate.m in Sources */,
+				3B37957514A7D8B0007B0BFC /* UIView+JaDFreshly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

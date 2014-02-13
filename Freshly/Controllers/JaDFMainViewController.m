@@ -18,14 +18,14 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [UIView animateWithDuration:KAnimationDuration animations:^{
-        sleepNowBtn.frame = CGRectMake(sleepNowBtn.frame.origin.x, sleepNowBtn.frame.origin.y+180, sleepNowBtn.frame.size.width , sleepNowBtn.frame.size.height);
-        chooseTimeBtn.frame = CGRectMake(chooseTimeBtn.frame.origin.x, chooseTimeBtn.frame.origin.y-187, chooseTimeBtn.frame.size.width , chooseTimeBtn.frame.size.height);
-        sleepNowTxt.frame = CGRectMake(sleepNowTxt.frame.origin.x, sleepNowTxt.frame.origin.y+180, sleepNowTxt.frame.size.width , sleepNowTxt.frame.size.height);
-        sleepNowLogo.frame = CGRectMake(sleepNowLogo.frame.origin.x, sleepNowLogo.frame.origin.y+180, sleepNowLogo.frame.size.width , sleepNowLogo.frame.size.height);
-        chooseTimeTxt.frame = CGRectMake(chooseTimeTxt.frame.origin.x, chooseTimeTxt.frame.origin.y-187, chooseTimeTxt.frame.size.width , chooseTimeTxt.frame.size.height);
-        chooseTimeLogo.frame = CGRectMake(chooseTimeLogo.frame.origin.x, chooseTimeLogo.frame.origin.y-187, chooseTimeLogo.frame.size.width , chooseTimeLogo.frame.size.height);
-        arrow1.frame = CGRectMake(arrow1.frame.origin.x, arrow1.frame.origin.y+180, arrow1.frame.size.width , arrow1.frame.size.height);
-        arrow2.frame = CGRectMake(arrow2.frame.origin.x, arrow2.frame.origin.y-187, arrow2.frame.size.width , arrow2.frame.size.height);
+        [sleepNowBtn setFrameOriginY:sleepNowBtn.frame.origin.y+180];
+        [sleepNowTxt setFrameOriginY:sleepNowTxt.frame.origin.y+180];
+        [sleepNowLogo setFrameOriginY:sleepNowLogo.frame.origin.y+180];
+        [arrow1 setFrameOriginY:arrow1.frame.origin.y+180];
+        [chooseTimeBtn setFrameOriginY:chooseTimeBtn.frame.origin.y-187];
+        [chooseTimeTxt setFrameOriginY:chooseTimeTxt.frame.origin.y-187];
+        [chooseTimeLogo setFrameOriginY:chooseTimeLogo.frame.origin.y-187];
+        [arrow2 setFrameOriginY:arrow2.frame.origin.y-187];
         infoBtn.alpha = 1;
         //settingsBtn.alpha = 1;
     }completion:^(BOOL finished){
@@ -35,14 +35,14 @@
 - (void)viewWillDisappearAnimationWithAction:(int)sel
 {
     [UIView animateWithDuration:KAnimationDuration animations:^{
-        sleepNowBtn.frame = CGRectMake(sleepNowBtn.frame.origin.x, sleepNowBtn.frame.origin.y-180, sleepNowBtn.frame.size.width , sleepNowBtn.frame.size.height);
-        chooseTimeBtn.frame = CGRectMake(chooseTimeBtn.frame.origin.x, chooseTimeBtn.frame.origin.y+187, chooseTimeBtn.frame.size.width , chooseTimeBtn.frame.size.height);
-        sleepNowTxt.frame = CGRectMake(sleepNowTxt.frame.origin.x, sleepNowTxt.frame.origin.y-180, sleepNowTxt.frame.size.width , sleepNowTxt.frame.size.height);
-        sleepNowLogo.frame = CGRectMake(sleepNowLogo.frame.origin.x, sleepNowLogo.frame.origin.y-180, sleepNowLogo.frame.size.width , sleepNowLogo.frame.size.height);
-        chooseTimeTxt.frame = CGRectMake(chooseTimeTxt.frame.origin.x, chooseTimeTxt.frame.origin.y+187, chooseTimeTxt.frame.size.width , chooseTimeTxt.frame.size.height);
-        chooseTimeLogo.frame = CGRectMake(chooseTimeLogo.frame.origin.x, chooseTimeLogo.frame.origin.y+187, chooseTimeLogo.frame.size.width , chooseTimeLogo.frame.size.height);
-        arrow1.frame = CGRectMake(arrow1.frame.origin.x, arrow1.frame.origin.y-180, arrow1.frame.size.width , arrow1.frame.size.height);
-        arrow2.frame = CGRectMake(arrow2.frame.origin.x, arrow2.frame.origin.y+187, arrow2.frame.size.width , arrow2.frame.size.height);
+        [sleepNowBtn setFrameOriginY:sleepNowBtn.frame.origin.y-180];
+        [sleepNowTxt setFrameOriginY:sleepNowTxt.frame.origin.y-180];
+        [sleepNowLogo setFrameOriginY:sleepNowLogo.frame.origin.y-180];
+        [arrow1 setFrameOriginY:arrow1.frame.origin.y-180];
+        [chooseTimeBtn setFrameOriginY:chooseTimeBtn.frame.origin.y+187];
+        [chooseTimeTxt setFrameOriginY:chooseTimeTxt.frame.origin.y+187];
+        [chooseTimeLogo setFrameOriginY:chooseTimeLogo.frame.origin.y+187];
+        [arrow2 setFrameOriginY:arrow2.frame.origin.y+187];
         infoBtn.alpha = 0;
         settingsBtn.alpha = 0;
     }completion:^(BOOL finished){
@@ -81,8 +81,8 @@
     [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:self.view cache:YES];
     [UIView setAnimationDelegate:self]; 
     [UIView setAnimationDidStopSelector:@selector(startupAnimationDoneNext)];
-    startViewUp.frame = CGRectMake(startViewUp.frame.origin.x, startViewUp.frame.origin.y-180, startViewUp.frame.size.width, startViewUp.frame.size.height);
-    startViewDown.frame = CGRectMake(startViewDown.frame.origin.x, startViewDown.frame.origin.y+186, startViewDown.frame.size.width, startViewDown.frame.size.height);
+    [startViewUp setFrameOriginY:startViewUp.frame.origin.y-180];
+    [startViewDown setFrameOriginY:startViewDown.frame.origin.y+186];
     [UIView commitAnimations];
 }
 
@@ -132,24 +132,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     startViewUp = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"DefUp"]];
-    [startViewUp setFrame:CGRectMake(startViewUp.frame.origin.x, startViewUp.frame.origin.y, startViewUp.frame.size.width, startViewUp.frame.size.height)];
-    
-    
     startViewDown = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"DefDown"]];
-    [startViewDown setFrame:CGRectMake(startViewDown.frame.origin.x, startViewDown.frame.origin.y+222, startViewDown.frame.size.width, startViewDown.frame.size.height)];
-    
+    [startViewDown setFrameOriginY:startViewDown.frame.origin.y+222];
     
     [self.view addSubview:startViewUp];
     [self.view addSubview:startViewDown];
-    sleepNowBtn.frame = CGRectMake(sleepNowBtn.frame.origin.x, sleepNowBtn.frame.origin.y-180, sleepNowBtn.frame.size.width , sleepNowBtn.frame.size.height);
-    chooseTimeBtn.frame = CGRectMake(chooseTimeBtn.frame.origin.x, chooseTimeBtn.frame.origin.y+187, chooseTimeBtn.frame.size.width , chooseTimeBtn.frame.size.height);
-    sleepNowTxt.frame = CGRectMake(sleepNowTxt.frame.origin.x, sleepNowTxt.frame.origin.y-180, sleepNowTxt.frame.size.width , sleepNowTxt.frame.size.height);
-    sleepNowLogo.frame = CGRectMake(sleepNowLogo.frame.origin.x, sleepNowLogo.frame.origin.y-180, sleepNowLogo.frame.size.width , sleepNowLogo.frame.size.height);
-    chooseTimeTxt.frame = CGRectMake(chooseTimeTxt.frame.origin.x, chooseTimeTxt.frame.origin.y+187, chooseTimeTxt.frame.size.width , chooseTimeTxt.frame.size.height);
-    chooseTimeLogo.frame = CGRectMake(chooseTimeLogo.frame.origin.x, chooseTimeLogo.frame.origin.y+187, chooseTimeLogo.frame.size.width , chooseTimeLogo.frame.size.height);
-    arrow1.frame = CGRectMake(arrow1.frame.origin.x, arrow1.frame.origin.y-180, arrow1.frame.size.width , arrow1.frame.size.height);
-    arrow2.frame = CGRectMake(arrow2.frame.origin.x, arrow2.frame.origin.y+187, arrow2.frame.size.width , arrow2.frame.size.height);
+    
+    [sleepNowBtn setFrameOriginY:sleepNowBtn.frame.origin.y-180];
+    [sleepNowTxt setFrameOriginY:sleepNowTxt.frame.origin.y-180];
+    [sleepNowLogo setFrameOriginY:sleepNowLogo.frame.origin.y-180];
+    [arrow1 setFrameOriginY:arrow1.frame.origin.y-180];
+    [chooseTimeBtn setFrameOriginY:chooseTimeBtn.frame.origin.y+187];
+    [chooseTimeTxt setFrameOriginY:chooseTimeTxt.frame.origin.y+187];
+    [chooseTimeLogo setFrameOriginY:chooseTimeLogo.frame.origin.y+187];
+    [arrow2 setFrameOriginY:arrow2.frame.origin.y+187];
     settingsBtn.alpha = 0;
     settingsBtn.userInteractionEnabled = NO;
     // Do any additional setup after loading the view from its nib.

@@ -257,7 +257,7 @@
         UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ChooseTimeBgSx"]];
         return bg;
     }
-    UIImageView *bg = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"ChooseTimeBgSx"] imageRotatedByDegrees:180]];
+    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageWithCGImage:[UIImage imageNamed:@"ChooseTimeBgSx"].CGImage scale:1.0 orientation:UIImageOrientationUpMirrored]];
     return bg;
 }
 
